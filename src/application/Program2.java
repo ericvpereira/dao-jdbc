@@ -23,13 +23,17 @@ public class Program2 {
 		Department department = departmentDao.findByIdDepartment(6);
 		department.setName("Esportes");
 		departmentDao.update(department);
-		System.out.println("Update completed");*/
+		System.out.println("Update completed");
 		
 		System.out.println("\n=== TEST 3: department delete ===");
 		System.out.print("Enter id for delete test: ");
 		int id = sc.nextInt();
 		departmentDao.deleteById(id);
-		System.out.println("Delete completed");
+		System.out.println("Delete completed");*/
+		
+		System.out.println("\n=== TEST 4: department findById ===");
+		Department dep = departmentDao.findByIdDepartment(3);
+		System.out.println(dep);
 		
 		sc.close();
 	}
